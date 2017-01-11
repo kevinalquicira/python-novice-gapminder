@@ -161,9 +161,9 @@ average(values)
 > >     for i in range(iterations):
 > >         new = ''
 > >         # iterate through characters in previous string
-> >         for j in range(len(s)):
+> >         for j in range(len(old)):
 > >             left = j-1
-> >             right = (j+1)%len(s) # ensure right index wraps around
+> >             right = (j+1)%len(old) # ensure right index wraps around
 > >             if old[left]==old[right]:
 > >                 new += '-'
 > >             else:
